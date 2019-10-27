@@ -1,5 +1,3 @@
-import org.junit.FixMethodOrder
-
 import static net.grinder.script.Grinder.grinder
 import static org.junit.Assert.*
 import static org.hamcrest.Matchers.*

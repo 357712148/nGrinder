@@ -1,6 +1,6 @@
-import org.testng.annotations.BeforeClass
-import org.testng.annotations.Test
-import sun.reflect.UTF8
+import org.junit.Before
+import org.junit.BeforeClass
+import org.junit.Test
 
 import static net.grinder.script.Grinder.grinder
 
@@ -53,7 +53,7 @@ class TestRunner {
         grinder.logger.info("before thread.");
     }
 
-    @BeforeClass
+    @Before
     public void before() {
         request.setHeaders(headers)
         cookies.each { CookieModule.addCookie(it, HTTPPluginControl.getThreadHTTPClientContext()) }
